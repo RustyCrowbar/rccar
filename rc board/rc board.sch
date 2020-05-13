@@ -134,17 +134,6 @@ Wire Wire Line
 	6100 1450 6100 1400
 Wire Wire Line
 	6200 1400 6200 1450
-$Comp
-L power:+3.3V #PWR02
-U 1 1 5EB83CB4
-P 3150 1700
-F 0 "#PWR02" H 3150 1550 50  0001 C CNN
-F 1 "+3.3V" H 3165 1873 50  0000 C CNN
-F 2 "" H 3150 1700 50  0001 C CNN
-F 3 "" H 3150 1700 50  0001 C CNN
-	1    3150 1700
-	1    0    0    -1  
-$EndComp
 Text GLabel 2450 2300 0    50   3State ~ 0
 EN_0
 Text GLabel 4900 2000 0    50   3State ~ 0
@@ -186,77 +175,6 @@ Wire Wire Line
 	5850 2600 4950 2600
 Wire Wire Line
 	5050 2000 4900 2000
-Text GLabel 6350 1450 1    50   Output ~ 0
-+3.3V_0
-$Comp
-L power:+3.3V #PWR05
-U 1 1 5EB9DEDF
-P 5000 3350
-F 0 "#PWR05" H 5000 3200 50  0001 C CNN
-F 1 "+3.3V" H 5015 3523 50  0000 C CNN
-F 2 "" H 5000 3350 50  0001 C CNN
-F 3 "" H 5000 3350 50  0001 C CNN
-	1    5000 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5EB9EAA4
-P 4850 3700
-F 0 "R2" H 4920 3746 50  0000 L CNN
-F 1 "10" H 4920 3655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 3700 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 4850 3700 50  0001 C CNN
-	1    4850 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5EB9F2F6
-P 5150 3700
-F 0 "R5" H 5220 3746 50  0000 L CNN
-F 1 "10" H 5220 3655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 3700 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 5150 3700 50  0001 C CNN
-	1    5150 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5EB9F771
-P 4600 3700
-F 0 "R1" H 4670 3746 50  0000 L CNN
-F 1 "10" H 4670 3655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4530 3700 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 4600 3700 50  0001 C CNN
-	1    4600 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5EB9FB54
-P 5400 3700
-F 0 "R6" H 5470 3746 50  0000 L CNN
-F 1 "10" H 5470 3655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5330 3700 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 5400 3700 50  0001 C CNN
-	1    5400 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 3550 4850 3550
-Connection ~ 4850 3550
-Connection ~ 5150 3550
-Wire Wire Line
-	5150 3550 5400 3550
-Text GLabel 4600 3850 3    50   Input ~ 0
-+3.3V_0
-Text GLabel 4850 3850 3    50   Input ~ 0
-+3.3V_1
-Text GLabel 5150 3850 3    50   Input ~ 0
-+3.3V_2
-Text GLabel 5400 3850 3    50   Input ~ 0
-+3.3V_3
 Text GLabel 2450 2500 0    50   3State ~ 0
 EN_1
 Text GLabel 2450 2700 0    50   3State ~ 0
@@ -413,31 +331,6 @@ Text GLabel 6550 3850 3    50   Input ~ 0
 +5V_2
 Text GLabel 6800 3850 3    50   Input ~ 0
 +5V_3
-$Comp
-L power:GND #PWR07
-U 1 1 5EB9FF4B
-P 5650 3750
-F 0 "#PWR07" H 5650 3500 50  0001 C CNN
-F 1 "GND" H 5655 3577 50  0000 C CNN
-F 2 "" H 5650 3750 50  0001 C CNN
-F 3 "" H 5650 3750 50  0001 C CNN
-	1    5650 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 5EBA0893
-P 5650 3650
-F 0 "C1" H 5558 3604 50  0000 R CNN
-F 1 "10uF" H 5558 3695 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5688 3500 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/885012205067?qs=sGAEpiMZZMsh%252B1woXyUXj4jKQI6sNRw63P4glUaj4WU%3D" H 5650 3650 50  0001 C CNN
-	1    5650 3650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5400 3550 5650 3550
-Connection ~ 5400 3550
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 5EBA35A5
@@ -847,20 +740,41 @@ F 3 "" H 3450 2500 50  0001 C CNN
 	1    3450 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4850 3550 5000 3550
 $Comp
-L Device:D_Schottky_Small D?
-U 1 1 5EC66306
-P 5000 3450
-F 0 "D?" V 4954 3518 50  0000 L CNN
-F 1 "D_Schottky_Small" V 5045 3518 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 5000 3450 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Semiconductors/BAT54W-HG3-08?qs=sGAEpiMZZMtbRapU8LlZDx2r3HTumQniWWKxY%2FhzXd0HAFhVJGEzKQ%3D%3D" V 5000 3450 50  0001 C CNN
-	1    5000 3450
-	0    1    1    0   
+L power:+5V #PWR?
+U 1 1 5EC6B685
+P 3150 1700
+F 0 "#PWR?" H 3150 1550 50  0001 C CNN
+F 1 "+5V" H 3165 1873 50  0000 C CNN
+F 2 "" H 3150 1700 50  0001 C CNN
+F 3 "" H 3150 1700 50  0001 C CNN
+	1    3150 1700
+	1    0    0    -1  
 $EndComp
-Connection ~ 5000 3550
+$Comp
+L Device:C_Small C?
+U 1 1 5EC6F916
+P 6350 1350
+F 0 "C?" V 6121 1350 50  0000 C CNN
+F 1 "1uF" V 6212 1350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6388 1200 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/KEMET/C0603C105K7PACTU?qs=sGAEpiMZZMs0AnBnWHyRQN7%2FAA2D2lPPos6U11lU8XXhxOv1ll26bQ%3D%3D" H 6350 1350 50  0001 C CNN
+	1    6350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC7407D
+P 6250 1050
+F 0 "#PWR?" H 6250 800 50  0001 C CNN
+F 1 "GND" H 6255 877 50  0000 C CNN
+F 2 "" H 6250 1050 50  0001 C CNN
+F 3 "" H 6250 1050 50  0001 C CNN
+	1    6250 1050
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5000 3550 5150 3550
+	6250 1050 6350 1050
+Wire Wire Line
+	6350 1050 6350 1250
 $EndSCHEMATC
