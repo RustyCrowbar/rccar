@@ -1,3 +1,5 @@
 *-cache*
 *-bak
 *.swp
+*autosave*
+*.~lock*
