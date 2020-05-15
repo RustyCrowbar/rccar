@@ -187,12 +187,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR09
 U 1 1 5EB8059C
-P 3750 6600
-F 0 "#PWR09" H 3750 6450 50  0001 C CNN
-F 1 "+5V" H 3765 6773 50  0000 C CNN
-F 2 "" H 3750 6600 50  0001 C CNN
-F 3 "" H 3750 6600 50  0001 C CNN
-	1    3750 6600
+P 4400 6650
+F 0 "#PWR09" H 4400 6500 50  0001 C CNN
+F 1 "+5V" H 4415 6823 50  0000 C CNN
+F 2 "" H 4400 6650 50  0001 C CNN
+F 3 "" H 4400 6650 50  0001 C CNN
+	1    4400 6650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -264,70 +264,70 @@ Text GLabel 6350 900  1    50   Output ~ 0
 $Comp
 L Device:R R8
 U 1 1 5EB9C3E2
-P 3500 6950
-F 0 "R8" H 3570 6996 50  0000 L CNN
-F 1 "10" H 3570 6905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 6950 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 3500 6950 50  0001 C CNN
-	1    3500 6950
+P 4150 7000
+F 0 "R8" H 4220 7046 50  0000 L CNN
+F 1 "10" H 4220 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4080 7000 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 4150 7000 50  0001 C CNN
+	1    4150 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 5EB9C3E8
-P 4000 6950
-F 0 "R9" H 4070 6996 50  0000 L CNN
-F 1 "10" H 4070 6905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 6950 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 4000 6950 50  0001 C CNN
-	1    4000 6950
+P 4650 7000
+F 0 "R9" H 4720 7046 50  0000 L CNN
+F 1 "10" H 4720 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 7000 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 4650 7000 50  0001 C CNN
+	1    4650 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5EB9C3EE
-P 3250 6950
-F 0 "R7" H 3320 6996 50  0000 L CNN
-F 1 "10" H 3320 6905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 6950 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 3250 6950 50  0001 C CNN
-	1    3250 6950
+P 3900 7000
+F 0 "R7" H 3970 7046 50  0000 L CNN
+F 1 "10" H 3970 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 7000 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 3900 7000 50  0001 C CNN
+	1    3900 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10
 U 1 1 5EB9C3F4
-P 4250 6950
-F 0 "R10" H 4320 6996 50  0000 L CNN
-F 1 "10" H 4320 6905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 6950 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 4250 6950 50  0001 C CNN
-	1    4250 6950
+P 4900 7000
+F 0 "R10" H 4970 7046 50  0000 L CNN
+F 1 "10" H 4970 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 7000 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW080510R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWn%252B71JJ2tnCQ%3D" H 4900 7000 50  0001 C CNN
+	1    4900 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 6800 3500 6800
-Connection ~ 3500 6800
-Connection ~ 4000 6800
+	3900 6850 4150 6850
+Connection ~ 4150 6850
+Connection ~ 4650 6850
 Wire Wire Line
-	4000 6800 4250 6800
-Text GLabel 3250 7100 3    50   Input ~ 0
+	4650 6850 4900 6850
+Text GLabel 3900 7150 3    50   Input ~ 0
 +5V_0
-Text GLabel 3500 7100 3    50   Input ~ 0
+Text GLabel 4150 7150 3    50   Input ~ 0
 +5V_1
-Text GLabel 4000 7100 3    50   Input ~ 0
+Text GLabel 4650 7150 3    50   Input ~ 0
 +5V_2
-Text GLabel 4250 7100 3    50   Input ~ 0
+Text GLabel 4900 7150 3    50   Input ~ 0
 +5V_3
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 5EBA35A5
-P 3750 6700
-F 0 "F1" H 3818 6746 50  0000 L CNN
-F 1 "370mA" H 3818 6655 50  0000 L CNN
-F 2 "Fuse:FUSC1607X85N" H 3800 6500 50  0001 L CNN
-F 3 "https://www.mouser.fr/ProductDetail/Bussmann-Eaton/PTS120630V016?qs=sGAEpiMZZMsxR%252BBXi4wRUDSdQXJeZb9OzAlUI%2Fk5feM%3D" H 3750 6700 50  0001 C CNN
-	1    3750 6700
+P 4400 6750
+F 0 "F1" H 4468 6796 50  0000 L CNN
+F 1 "370mA" H 4468 6705 50  0000 L CNN
+F 2 "Fuse:FUSC1607X85N" H 4450 6550 50  0001 L CNN
+F 3 "https://www.mouser.fr/ProductDetail/Bussmann-Eaton/PTS120630V016?qs=sGAEpiMZZMsxR%252BBXi4wRUDSdQXJeZb9OzAlUI%2Fk5feM%3D" H 4400 6750 50  0001 C CNN
+	1    4400 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -673,23 +673,23 @@ Wire Wire Line
 $Comp
 L Device:C_Small C7
 U 1 1 5EC79295
-P 3750 6900
-F 0 "C7" V 3979 6900 50  0000 C CNN
-F 1 "10uF" V 3888 6900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3788 6750 50  0001 C CNN
-F 3 "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/885012205067?qs=sGAEpiMZZMsh%252B1woXyUXj4jKQI6sNRw63P4glUaj4WU%3D" H 3750 6900 50  0001 C CNN
-	1    3750 6900
+P 4400 6950
+F 0 "C7" V 4629 6950 50  0000 C CNN
+F 1 "10uF" V 4538 6950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 6800 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/Wurth-Elektronik/885012205067?qs=sGAEpiMZZMsh%252B1woXyUXj4jKQI6sNRw63P4glUaj4WU%3D" H 4400 6950 50  0001 C CNN
+	1    4400 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5EC79C90
-P 3750 7000
-F 0 "#PWR0103" H 3750 6750 50  0001 C CNN
-F 1 "GND" H 3755 6827 50  0000 C CNN
-F 2 "" H 3750 7000 50  0001 C CNN
-F 3 "" H 3750 7000 50  0001 C CNN
-	1    3750 7000
+P 4400 7050
+F 0 "#PWR0103" H 4400 6800 50  0001 C CNN
+F 1 "GND" H 4405 6877 50  0000 C CNN
+F 2 "" H 4400 7050 50  0001 C CNN
+F 3 "" H 4400 7050 50  0001 C CNN
+	1    4400 7050
 	1    0    0    -1  
 $EndComp
 Text GLabel 2550 2300 2    50   Input ~ 0
@@ -806,12 +806,12 @@ Wire Wire Line
 $Comp
 L power:+BATT #PWR0104
 U 1 1 5EC31323
-P 2750 6600
-F 0 "#PWR0104" H 2750 6450 50  0001 C CNN
-F 1 "+BATT" H 2765 6773 50  0000 C CNN
-F 2 "" H 2750 6600 50  0001 C CNN
-F 3 "" H 2750 6600 50  0001 C CNN
-	1    2750 6600
+P 3100 6600
+F 0 "#PWR0104" H 3100 6450 50  0001 C CNN
+F 1 "+BATT" H 3115 6773 50  0000 C CNN
+F 2 "" H 3100 6600 50  0001 C CNN
+F 3 "" H 3100 6600 50  0001 C CNN
+	1    3100 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -827,75 +827,70 @@ Wire Wire Line
 $Comp
 L Device:D_Schottky_x2_KCom_AKA D2
 U 1 1 5EC853AE
-P 2150 6950
-F 0 "D2" H 2150 7166 50  0000 C CNN
-F 1 "MBR2045CTI" H 2150 7075 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 2150 6950 50  0001 C CNN
-F 3 "https://www.mouser.fr/datasheet/2/115/MBR2045CTI-355776.pdf" H 2150 6950 50  0001 C CNN
-	1    2150 6950
+P 2500 6950
+F 0 "D2" H 2500 7166 50  0000 C CNN
+F 1 "MBR2045CTI" H 2500 7075 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 2500 6950 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/115/MBR2045CTI-355776.pdf" H 2500 6950 50  0001 C CNN
+	1    2500 6950
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2750 6600 2750 6800
-Text GLabel 1600 7000 2    50   Output ~ 0
+	3100 6600 3100 6800
+Text GLabel 1950 7000 2    50   Output ~ 0
 Batt_4
-Text GLabel 1600 7100 2    50   Output ~ 0
+Text GLabel 1950 7100 2    50   Output ~ 0
 Batt_3
-Text GLabel 1600 7400 2    50   Output ~ 0
+Text GLabel 1950 7400 2    50   Output ~ 0
 Batt_0
-Text GLabel 1600 7300 2    50   Output ~ 0
+Text GLabel 1950 7300 2    50   Output ~ 0
 Batt_1
-Text GLabel 1600 7200 2    50   Output ~ 0
+Text GLabel 1950 7200 2    50   Output ~ 0
 Batt_2
-Text GLabel 1600 6900 2    50   Output ~ 0
+Text GLabel 1950 6900 2    50   Output ~ 0
 Batt_5
 $Comp
 L Device:D_Schottky_x2_KCom_AKA D3
 U 1 1 5EC976A2
-P 2550 7150
-F 0 "D3" H 2550 7366 50  0000 C CNN
-F 1 "MBR2045CTI" H 2550 7275 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 2550 7150 50  0001 C CNN
-F 3 "https://www.mouser.fr/datasheet/2/115/MBR2045CTI-355776.pdf" H 2550 7150 50  0001 C CNN
-	1    2550 7150
+P 2900 7150
+F 0 "D3" H 2900 7366 50  0000 C CNN
+F 1 "MBR2045CTI" H 2900 7275 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 2900 7150 50  0001 C CNN
+F 3 "https://www.mouser.fr/datasheet/2/115/MBR2045CTI-355776.pdf" H 2900 7150 50  0001 C CNN
+	1    2900 7150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	1600 6900 1600 6650
 Wire Wire Line
-	1600 6650 2150 6650
+	1950 7000 2400 7000
 Wire Wire Line
-	1600 7000 2050 7000
+	2400 7000 2400 7250
 Wire Wire Line
-	2050 7000 2050 7250
+	2400 7250 2500 7250
 Wire Wire Line
-	2050 7250 2150 7250
-Connection ~ 1600 7000
+	1950 7100 2350 7100
 Wire Wire Line
-	1600 7100 2000 7100
+	2350 7100 2350 7400
 Wire Wire Line
-	2000 7100 2000 7400
+	2350 7400 2800 7400
 Wire Wire Line
-	2000 7400 2450 7400
+	2800 7400 2800 6850
 Wire Wire Line
-	2450 7400 2450 6850
+	2800 6850 2900 6850
 Wire Wire Line
-	2450 6850 2550 6850
-Connection ~ 1600 7100
+	2700 6950 2700 6800
 Wire Wire Line
-	2350 6950 2350 6800
+	2700 6800 3100 6800
+Connection ~ 3100 6800
 Wire Wire Line
-	2350 6800 2750 6800
-Connection ~ 2750 6800
+	3100 6800 3100 7150
 Wire Wire Line
-	2750 6800 2750 7150
+	1950 7200 2300 7200
 Wire Wire Line
-	1600 7200 1950 7200
+	2300 7200 2300 7450
 Wire Wire Line
-	1950 7200 1950 7450
-Wire Wire Line
-	1950 7450 2550 7450
-Connection ~ 1600 7200
+	2300 7450 2900 7450
 Text GLabel 1150 3500 0    50   Input ~ 0
 Throttle_out
 Wire Wire Line
@@ -974,10 +969,10 @@ Wire Wire Line
 	5900 2600 6050 2600
 Connection ~ 6050 2600
 Wire Wire Line
-	3500 6800 3750 6800
-Connection ~ 3750 6800
+	4150 6850 4400 6850
+Connection ~ 4400 6850
 Wire Wire Line
-	3750 6800 4000 6800
+	4400 6850 4650 6850
 $Comp
 L power:+BATT #PWR0105
 U 1 1 5EE5F1B1
@@ -2155,4 +2150,147 @@ Text GLabel 3550 5600 2    50   Output ~ 0
 Batt_0_sense
 Wire Wire Line
 	3250 5600 3550 5600
+$Comp
+L Device:CP1_Small C?
+U 1 1 5F3F659C
+P 1700 7500
+F 0 "C?" H 1791 7546 50  0000 L CNN
+F 1 "1000uF" H 1791 7455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7500 50  0001 C CNN
+F 3 "~" H 1700 7500 50  0001 C CNN
+	1    1700 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5F3C2B37
+P 3400 6700
+F 0 "C?" H 3491 6746 50  0000 L CNN
+F 1 "1000uF" H 3491 6655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3400 6700 50  0001 C CNN
+F 3 "~" H 3400 6700 50  0001 C CNN
+	1    3400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3C1665
+P 3400 6800
+F 0 "#PWR?" H 3400 6550 50  0001 C CNN
+F 1 "GND" H 3405 6627 50  0000 C CNN
+F 2 "" H 3400 6800 50  0001 C CNN
+F 3 "" H 3400 6800 50  0001 C CNN
+	1    3400 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5F3C11A6
+P 3400 6600
+F 0 "#PWR?" H 3400 6450 50  0001 C CNN
+F 1 "+BATT" H 3415 6773 50  0000 C CNN
+F 2 "" H 3400 6600 50  0001 C CNN
+F 3 "" H 3400 6600 50  0001 C CNN
+	1    3400 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5F48A357
+P 1700 7400
+F 0 "C?" V 1472 7400 50  0000 C CNN
+F 1 "1000uF" V 1563 7400 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7400 50  0001 C CNN
+F 3 "~" H 1700 7400 50  0001 C CNN
+	1    1700 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5F48ABA5
+P 1700 7300
+F 0 "C?" H 1791 7346 50  0000 L CNN
+F 1 "1000uF" H 1791 7255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7300 50  0001 C CNN
+F 3 "~" H 1700 7300 50  0001 C CNN
+	1    1700 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5F4ADE7E
+P 1700 7200
+F 0 "C?" H 1791 7246 50  0000 L CNN
+F 1 "1000uF" H 1791 7155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7200 50  0001 C CNN
+F 3 "~" H 1700 7200 50  0001 C CNN
+	1    1700 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5F4AE4AD
+P 1700 7100
+F 0 "C?" H 1791 7146 50  0000 L CNN
+F 1 "1000uF" H 1791 7055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7100 50  0001 C CNN
+F 3 "~" H 1700 7100 50  0001 C CNN
+	1    1700 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5F4AEC33
+P 1700 7000
+F 0 "C?" H 1791 7046 50  0000 L CNN
+F 1 "1000uF" H 1791 6955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7000 50  0001 C CNN
+F 3 "~" H 1700 7000 50  0001 C CNN
+	1    1700 7000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1600 7400
+Connection ~ 1600 7300
+Connection ~ 1600 7200
+Connection ~ 1600 7100
+Connection ~ 1600 7000
+Wire Wire Line
+	1800 7500 1800 7450
+Wire Wire Line
+	1800 7450 1600 7450
+Wire Wire Line
+	1600 7450 1600 7400
+Wire Wire Line
+	1800 7400 1800 7350
+Wire Wire Line
+	1800 7350 1600 7350
+Wire Wire Line
+	1600 7350 1600 7300
+Wire Wire Line
+	1800 7300 1800 7250
+Wire Wire Line
+	1800 7250 1600 7250
+Wire Wire Line
+	1600 7250 1600 7200
+Wire Wire Line
+	1800 7200 1800 7150
+Wire Wire Line
+	1800 7150 1600 7150
+Wire Wire Line
+	1600 7150 1600 7100
+Wire Wire Line
+	1800 7100 1800 7050
+Wire Wire Line
+	1800 7050 1600 7050
+Wire Wire Line
+	1600 7050 1600 7000
+Wire Wire Line
+	1800 7000 1800 6950
+Wire Wire Line
+	1800 6950 1600 6950
+Wire Wire Line
+	1600 6950 1600 6900
+Connection ~ 1600 6900
+Wire Wire Line
+	1600 6650 2500 6650
 $EndSCHEMATC
