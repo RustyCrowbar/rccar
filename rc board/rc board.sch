@@ -837,17 +837,17 @@ F 3 "https://www.mouser.fr/datasheet/2/115/MBR2045CTI-355776.pdf" H 2500 6950 50
 $EndComp
 Wire Wire Line
 	3100 6600 3100 6800
-Text GLabel 1950 7000 2    50   Output ~ 0
-Batt_4
 Text GLabel 1950 7100 2    50   Output ~ 0
-Batt_3
-Text GLabel 1950 7400 2    50   Output ~ 0
-Batt_0
-Text GLabel 1950 7300 2    50   Output ~ 0
-Batt_1
+Batt_4
 Text GLabel 1950 7200 2    50   Output ~ 0
+Batt_3
+Text GLabel 1950 7500 2    50   Output ~ 0
+Batt_0
+Text GLabel 1950 7400 2    50   Output ~ 0
+Batt_1
+Text GLabel 1950 7300 2    50   Output ~ 0
 Batt_2
-Text GLabel 1950 6900 2    50   Output ~ 0
+Text GLabel 1950 7000 2    50   Output ~ 0
 Batt_5
 $Comp
 L Device:D_Schottky_x2_KCom_AKA D3
@@ -863,15 +863,7 @@ $EndComp
 Wire Wire Line
 	1600 6900 1600 6650
 Wire Wire Line
-	1950 7000 2400 7000
-Wire Wire Line
-	2400 7000 2400 7250
-Wire Wire Line
 	2400 7250 2500 7250
-Wire Wire Line
-	1950 7100 2350 7100
-Wire Wire Line
-	2350 7100 2350 7400
 Wire Wire Line
 	2350 7400 2800 7400
 Wire Wire Line
@@ -885,10 +877,6 @@ Wire Wire Line
 Connection ~ 3100 6800
 Wire Wire Line
 	3100 6800 3100 7150
-Wire Wire Line
-	1950 7200 2300 7200
-Wire Wire Line
-	2300 7200 2300 7450
 Wire Wire Line
 	2300 7450 2900 7450
 Text GLabel 1150 3500 0    50   Input ~ 0
@@ -2151,10 +2139,10 @@ Batt_0_sense
 Wire Wire Line
 	3250 5600 3550 5600
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C31
 U 1 1 5F3F659C
 P 1700 7500
-F 0 "C?" H 1791 7546 50  0000 L CNN
+F 0 "C31" H 1791 7546 50  0000 L CNN
 F 1 "1000uF" H 1791 7455 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7500 50  0001 C CNN
 F 3 "~" H 1700 7500 50  0001 C CNN
@@ -2162,10 +2150,10 @@ F 3 "~" H 1700 7500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C32
 U 1 1 5F3C2B37
 P 3400 6700
-F 0 "C?" H 3491 6746 50  0000 L CNN
+F 0 "C32" H 3491 6746 50  0000 L CNN
 F 1 "1000uF" H 3491 6655 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3400 6700 50  0001 C CNN
 F 3 "~" H 3400 6700 50  0001 C CNN
@@ -2173,10 +2161,10 @@ F 3 "~" H 3400 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0127
 U 1 1 5F3C1665
 P 3400 6800
-F 0 "#PWR?" H 3400 6550 50  0001 C CNN
+F 0 "#PWR0127" H 3400 6550 50  0001 C CNN
 F 1 "GND" H 3405 6627 50  0000 C CNN
 F 2 "" H 3400 6800 50  0001 C CNN
 F 3 "" H 3400 6800 50  0001 C CNN
@@ -2184,10 +2172,10 @@ F 3 "" H 3400 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR0128
 U 1 1 5F3C11A6
 P 3400 6600
-F 0 "#PWR?" H 3400 6450 50  0001 C CNN
+F 0 "#PWR0128" H 3400 6450 50  0001 C CNN
 F 1 "+BATT" H 3415 6773 50  0000 C CNN
 F 2 "" H 3400 6600 50  0001 C CNN
 F 3 "" H 3400 6600 50  0001 C CNN
@@ -2195,10 +2183,10 @@ F 3 "" H 3400 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C30
 U 1 1 5F48A357
 P 1700 7400
-F 0 "C?" V 1472 7400 50  0000 C CNN
+F 0 "C30" V 1472 7400 50  0000 C CNN
 F 1 "1000uF" V 1563 7400 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7400 50  0001 C CNN
 F 3 "~" H 1700 7400 50  0001 C CNN
@@ -2206,10 +2194,10 @@ F 3 "~" H 1700 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C29
 U 1 1 5F48ABA5
 P 1700 7300
-F 0 "C?" H 1791 7346 50  0000 L CNN
+F 0 "C29" H 1791 7346 50  0000 L CNN
 F 1 "1000uF" H 1791 7255 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7300 50  0001 C CNN
 F 3 "~" H 1700 7300 50  0001 C CNN
@@ -2217,10 +2205,10 @@ F 3 "~" H 1700 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C28
 U 1 1 5F4ADE7E
 P 1700 7200
-F 0 "C?" H 1791 7246 50  0000 L CNN
+F 0 "C28" H 1791 7246 50  0000 L CNN
 F 1 "1000uF" H 1791 7155 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7200 50  0001 C CNN
 F 3 "~" H 1700 7200 50  0001 C CNN
@@ -2228,10 +2216,10 @@ F 3 "~" H 1700 7200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C27
 U 1 1 5F4AE4AD
 P 1700 7100
-F 0 "C?" H 1791 7146 50  0000 L CNN
+F 0 "C27" H 1791 7146 50  0000 L CNN
 F 1 "1000uF" H 1791 7055 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7100 50  0001 C CNN
 F 3 "~" H 1700 7100 50  0001 C CNN
@@ -2239,15 +2227,15 @@ F 3 "~" H 1700 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L Device:CP1_Small C26
 U 1 1 5F4AEC33
 P 1700 7000
-F 0 "C?" H 1791 7046 50  0000 L CNN
-F 1 "1000uF" H 1791 6955 50  0000 L CNN
+F 0 "C26" V 1472 7000 50  0000 C CNN
+F 1 "1000uF" V 1563 7000 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7000 50  0001 C CNN
 F 3 "~" H 1700 7000 50  0001 C CNN
 	1    1700 7000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Connection ~ 1600 7400
 Connection ~ 1600 7300
@@ -2293,4 +2281,28 @@ Wire Wire Line
 Connection ~ 1600 6900
 Wire Wire Line
 	1600 6650 2500 6650
+Wire Wire Line
+	2300 7300 2300 7450
+Wire Wire Line
+	2350 7200 2350 7400
+Wire Wire Line
+	2400 7100 2400 7250
+Wire Wire Line
+	1950 7500 1800 7500
+Connection ~ 1800 7500
+Wire Wire Line
+	1950 7400 1800 7400
+Connection ~ 1800 7400
+Wire Wire Line
+	1800 7300 2300 7300
+Connection ~ 1800 7300
+Wire Wire Line
+	1800 7200 2350 7200
+Connection ~ 1800 7200
+Wire Wire Line
+	1800 7100 2400 7100
+Connection ~ 1800 7100
+Wire Wire Line
+	1950 7000 1800 7000
+Connection ~ 1800 7000
 $EndSCHEMATC
