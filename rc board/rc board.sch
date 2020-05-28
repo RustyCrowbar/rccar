@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "rc_car"
+Date "2020-05-27"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -229,7 +229,7 @@ F 3 "https://www.mouser.fr/ProductDetail/Laird-Performance-Materials/TYS6045470M
 	-1   0    0    1   
 $EndComp
 $Comp
-L Driver_Motor:DRV10983 U1
+L rc-board-rescue:DRV10983-Driver_Motor U1
 U 1 1 5EB65DDA
 P 5750 1600
 F 0 "U1" H 6275 511 50  0000 C CNN
@@ -1095,7 +1095,7 @@ F 3 "https://www.mouser.fr/ProductDetail/Laird-Performance-Materials/TYS6045470M
 	-1   0    0    1   
 $EndComp
 $Comp
-L Driver_Motor:DRV10983 U2
+L rc-board-rescue:DRV10983-Driver_Motor U2
 U 1 1 5EE5F1FA
 P 9000 1600
 F 0 "U2" H 9525 511 50  0000 C CNN
@@ -1425,7 +1425,7 @@ F 3 "https://www.mouser.fr/ProductDetail/Laird-Performance-Materials/TYS6045470M
 	-1   0    0    1   
 $EndComp
 $Comp
-L Driver_Motor:DRV10983 U3
+L rc-board-rescue:DRV10983-Driver_Motor U3
 U 1 1 5EEE7CA6
 P 5800 4550
 F 0 "U3" H 6325 3461 50  0000 C CNN
@@ -1740,7 +1740,7 @@ F 3 "https://www.mouser.fr/ProductDetail/Laird-Performance-Materials/TYS6045470M
 	-1   0    0    1   
 $EndComp
 $Comp
-L Driver_Motor:DRV10983 U4
+L rc-board-rescue:DRV10983-Driver_Motor U4
 U 1 1 5EEE7D54
 P 9050 4550
 F 0 "U4" H 9575 3461 50  0000 C CNN
@@ -2143,7 +2143,7 @@ L Device:CP1_Small C31
 U 1 1 5F3F659C
 P 1700 7500
 F 0 "C31" H 1791 7546 50  0000 L CNN
-F 1 "1000uF" H 1791 7455 50  0000 L CNN
+F 1 "470uF" H 1791 7455 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7500 50  0001 C CNN
 F 3 "~" H 1700 7500 50  0001 C CNN
 	1    1700 7500
@@ -2156,7 +2156,7 @@ P 3400 6700
 F 0 "C32" H 3491 6746 50  0000 L CNN
 F 1 "1000uF" H 3491 6655 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3400 6700 50  0001 C CNN
-F 3 "~" H 3400 6700 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/647-UVZ1E102MPD1CM" H 3400 6700 50  0001 C CNN
 	1    3400 6700
 	1    0    0    -1  
 $EndComp
@@ -2187,7 +2187,7 @@ L Device:CP1_Small C30
 U 1 1 5F48A357
 P 1700 7400
 F 0 "C30" V 1472 7400 50  0000 C CNN
-F 1 "1000uF" V 1563 7400 50  0000 C CNN
+F 1 "470uF" V 1563 7400 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7400 50  0001 C CNN
 F 3 "~" H 1700 7400 50  0001 C CNN
 	1    1700 7400
@@ -2198,7 +2198,7 @@ L Device:CP1_Small C29
 U 1 1 5F48ABA5
 P 1700 7300
 F 0 "C29" H 1791 7346 50  0000 L CNN
-F 1 "1000uF" H 1791 7255 50  0000 L CNN
+F 1 "470uF" H 1791 7255 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7300 50  0001 C CNN
 F 3 "~" H 1700 7300 50  0001 C CNN
 	1    1700 7300
@@ -2209,7 +2209,7 @@ L Device:CP1_Small C28
 U 1 1 5F4ADE7E
 P 1700 7200
 F 0 "C28" H 1791 7246 50  0000 L CNN
-F 1 "1000uF" H 1791 7155 50  0000 L CNN
+F 1 "470uF" H 1791 7155 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7200 50  0001 C CNN
 F 3 "~" H 1700 7200 50  0001 C CNN
 	1    1700 7200
@@ -2220,7 +2220,7 @@ L Device:CP1_Small C27
 U 1 1 5F4AE4AD
 P 1700 7100
 F 0 "C27" H 1791 7146 50  0000 L CNN
-F 1 "1000uF" H 1791 7055 50  0000 L CNN
+F 1 "470uF" H 1791 7055 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7100 50  0001 C CNN
 F 3 "~" H 1700 7100 50  0001 C CNN
 	1    1700 7100
@@ -2231,7 +2231,7 @@ L Device:CP1_Small C26
 U 1 1 5F4AEC33
 P 1700 7000
 F 0 "C26" V 1472 7000 50  0000 C CNN
-F 1 "1000uF" V 1563 7000 50  0000 C CNN
+F 1 "470uF" V 1563 7000 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7000 50  0001 C CNN
 F 3 "~" H 1700 7000 50  0001 C CNN
 	1    1700 7000
