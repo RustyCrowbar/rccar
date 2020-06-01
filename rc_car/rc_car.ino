@@ -8,27 +8,82 @@ bool initializeDrivers()
   drivers[EN_RR]= new Driver(EN_RR_PIN);
   frontDifferential.closedRatio = FD_RATIO;
   rearDifferential.closedRatio = FD_RATIO;
+  return false;
+}
+
+bool commandDrivers()
+{
+  //Use diferential settings and throttle in.
+  //frontDifferential.closedRatio = FD_RATIO;
+  //rearDifferential.closedRatio = FD_RATIO;
+  
+  drivers[EN_FL]->setCommand(0);
+  drivers[EN_FR]->setCommand(0);
+  drivers[EN_RL]->setCommand(0);
+  drivers[EN_RR]->setCommand(0);
+  return false;
 }
 
 void displayInfo(int8_t throtIn, int8_t dirIn, bool ch3In, int8_t throtOut, int8_t dirOut, bool ch3Out)
 {
   Serial.print("Throttle in: ");
   Serial.println(throtIn);
+  Serial.print("Steering in: ");
+  Serial.println(dirIn);
+  Serial.print("CH3 in: ");
+  Serial.println(ch3In ? "Active" : "Inactive");
+  Serial.print("Throttle out: ");
+  Serial.println(throtOut);
+  Serial.print("Steering Out: ");
+  Serial.println(dirOut);
+  Serial.print("CH3 out: ");
+  Serial.println(ch3Out ? "Active" : "Inactive");
+  Serial.print("FL speed (command|current): ");
+  Serial.print(drivers[EN_FL]->getCommand());
+  Serial.print(" | ");
+  Serial.println(drivers[EN_FL]->getSpeed());
+  Serial.print("FL speed (command|current): ");
+  Serial.print(drivers[EN_FR]->getCommand());
+  Serial.print(" | ");
+  Serial.println(drivers[EN_FR]->getSpeed());
+  Serial.print("FL speed (command|current): ");
+  Serial.print(drivers[EN_RL]->getCommand());
+  Serial.print(" | ");
+  Serial.println(drivers[EN_RL]->getSpeed());
+  Serial.print("FL speed (command|current): ");
+  Serial.print(drivers[EN_RR]->getCommand());
+  Serial.print(" | ");
+  Serial.println(drivers[EN_RR]->getSpeed());
 }
 
-int8_t getThrottle() //0: stopped; -128: max reverse; 127: max forward
+int8_t sampleThrottle() //0: stopped; -128: max reverse; 127: max forward
 {
-  
+  return 0;
 }
 
-int8_t getDirection() //0: straight; -128: max left; 127: max right
+int8_t sampleDir() //0: straight; -128: max left; 127: max right
 {
-  
+  return 0;
 }
 
-bool getCh3()
+bool sampleCh3()
 {
-  
+  return false;
+}
+
+int8_t computeAndOutputThrottle()
+{
+  return 0;
+}
+
+int8_t computeAndOutputDir()
+{
+  return 0;
+}
+
+bool computeAndOutputCh3()
+{
+  return false;
 }
 
 void setup()
@@ -58,7 +113,17 @@ void loop()
   int8_t throtOut;
   int8_t dirOut;
   bool ch3Out;
-  
+
+  throtIn = sampleThrottle();
+  dirIn = sampleDir();
+  ch3In = sampleDir();
+  throtOut = computeAndOutputThrottle();
+  dirOut = computeAndOutputDir();
+  ch3Out = computeAndOutputCh3();
+
+  if (!commandDrivers())
+    Serial.println("=== Failed to command drivers! ===");
+
   if (++u == OUTPUT_PERIOD)
     displayInfo(throtIn, dirIn, ch3In, throtOut, dirOut, ch3Out);
   /*Wire.beginTransmission(ADDR);
@@ -69,22 +134,27 @@ void loop()
   Wire.requestFrom(ADDR, 6);
   if (6 <= Wire.available())
     int a = Wire.read() << 8; //LSB y
-
-  delay(100);*/
+*/
+  delay(1); //Maybe delete me
 }
 
 Driver::Driver(uint8_t enPin)
 : enPin_(enPin)
 {
-  
+  command_ = 0; //stop
 }
 
-void Driver::setSpeed(uint8_t percent, uint8_t direction)
+void Driver::setCommand(int8_t percent)
 {
   
 }
 
-uint8_t Driver::getSpeed()
+int8_t Driver::getCommand()
+{
+  return command_;
+}
+
+int8_t Driver::getSpeed()
 {
   return 42;
 }

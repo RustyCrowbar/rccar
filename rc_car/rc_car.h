@@ -56,12 +56,14 @@ class Driver
 {
 public:
   Driver(uint8_t enPin);
-  void setSpeed(uint8_t percent, uint8_t direction);
-  uint8_t getSpeed();
+  void setCommand(int8_t percent);
+  int8_t getCommand();
+  int8_t getSpeed();
 
 private:
   uint8_t enPin_;
   uint8_t drv_;//FIXME
+  int8_t command_;
 };
 
 Driver* drivers[4];
