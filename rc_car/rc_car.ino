@@ -11,7 +11,7 @@ bool initializeDrivers()
   return false;
 }
 
-bool commandDrivers()
+bool commandDrivers(int8_t throtIn, int8_t dirIn, bool ch3In)
 {
   //Use diferential settings and throttle in.
   //frontDifferential.closedRatio = FD_RATIO;
@@ -54,6 +54,10 @@ void displayInfo(int8_t throtIn, int8_t dirIn, bool ch3In, int8_t throtOut, int8
   Serial.print(drivers[EN_RR]->getCommand());
   Serial.print(" | ");
   Serial.println(drivers[EN_RR]->getSpeed());
+  Serial.print("Battery voltages: ");
+  Serial.print();
+  Serial.print(" | ");
+  Serial.println();
 }
 
 int8_t sampleThrottle() //0: stopped; -128: max reverse; 127: max forward
@@ -116,12 +120,12 @@ void loop()
 
   throtIn = sampleThrottle();
   dirIn = sampleDir();
-  ch3In = sampleDir();
+  ch3In = sampleCh3();
   throtOut = computeAndOutputThrottle();
   dirOut = computeAndOutputDir();
   ch3Out = computeAndOutputCh3();
 
-  if (!commandDrivers())
+  if (!commandDrivers(throtIn, dirIn, ch3In))
     Serial.println("=== Failed to command drivers! ===");
 
   if (++u == OUTPUT_PERIOD)
@@ -146,7 +150,7 @@ Driver::Driver(uint8_t enPin)
 
 void Driver::setCommand(int8_t percent)
 {
-  
+  command_ = percent;
 }
 
 int8_t Driver::getCommand()
