@@ -13,13 +13,29 @@
 #define EN_RR_PIN 7
 #define DIR D8
 
-#define BATTERY_CELLS 5
-#define BATT0 A0
-#define BATT1 A1
-#define BATT2 A2
-#define BATT3 A3
-#define BATT4 A6
-#define BATT5 A7
+#define K 0.00472199
+#define MIN_CELL_VOLTAGE 2.8
+#define MAX_CELL_VOLTAGE 4.2
+#define MAX_BATTERY_CELLS 6
+uint8_t cell_pins [MAX_BATTERY_CELLS] =
+{
+  A0,
+  A1,
+  A2,
+  A3,
+  A6,
+  A7
+};
+
+double cell_const[MAX_BATTERY_CELLS] = 
+{
+  1.0000,
+  2.1915,
+  2.6970,
+  4.1111,
+  4.7333,
+  6.6000
+};
 
 #define THROTTLE_IN
 #define THROTTLE_OUT
@@ -50,6 +66,16 @@ enum d
   EN_FR,
   EN_RL,
   EN_RR
+};
+
+struct battery //All values are in mV
+{
+  uint16_t cell_0;
+  uint16_t cell_1;
+  uint16_t cell_2;
+  uint16_t cell_3;
+  uint16_t cell_4;
+  uint16_t cell_5;
 };
 
 class Driver

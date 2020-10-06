@@ -1,5 +1,41 @@
 #include "rc_car.h"
 
+bool battOk = true;
+
+void readAndPrintBatteryVoltages() //Returns true if battery voltage is ok.
+{
+  Serial.print("Battery voltages: ");
+  double battVoltage = 0.0;
+  double prevVoltage = 0.0;
+  for (uint8_t u = 0; 0 < MAX_BATTERY_CELLS; u++)
+  {
+    double cellVoltage = analogRead(cell_pins[u]);
+    cellVoltage += analogRead(cell_pins[u]);
+    cellVoltage += analogRead(cell_pins[u]);
+    cellVoltage *= K;
+    cellVoltage /= 3.0;
+    
+    // Scale reading to full voltage.
+    cellVoltage *= cell_const[u];
+    double tmp = cellVoltage;
+    
+    // Isolate current cell voltage.
+    cellVoltage -= prevVoltage;
+    battVoltage += cellVoltage;
+    prevVoltage = tmp;
+    if (cellVoltage < (MIN_CELL_VOLTAGE / 2) || u == MAX_BATTERY_CELLS - 1)
+      break; //We reached the last cell, skip to the end
+    battOk = (cellVoltage >= MIN_CELL_VOLTAGE && cellVoltage <= MAX_CELL_VOLTAGE);
+    Serial.print(cellVoltage);
+    Serial.print(" | ");
+  }
+  Serial.print(" | Total: ");
+  Serial.print(battVoltage);
+  if (!battOk)
+    Serial.print("  WARNING: One or more cells are outside of the operating range!");
+  Serial.println();
+}
+
 bool initializeDrivers()
 {
   drivers[EN_FL]= new Driver(EN_FL_PIN);
@@ -54,10 +90,7 @@ void displayInfo(int8_t throtIn, int8_t dirIn, bool ch3In, int8_t throtOut, int8
   Serial.print(drivers[EN_RR]->getCommand());
   Serial.print(" | ");
   Serial.println(drivers[EN_RR]->getSpeed());
-  Serial.print("Battery voltages: ");
-  Serial.print();
-  Serial.print(" | ");
-  Serial.println();
+  readAndPrintBatteryVoltages();
 }
 
 int8_t sampleThrottle() //0: stopped; -128: max reverse; 127: max forward
@@ -118,16 +151,18 @@ void loop()
   int8_t dirOut;
   bool ch3Out;
 
-  throtIn = sampleThrottle();
-  dirIn = sampleDir();
-  ch3In = sampleCh3();
-  throtOut = computeAndOutputThrottle();
-  dirOut = computeAndOutputDir();
-  ch3Out = computeAndOutputCh3();
+  if (battOk)
+  {
+    throtIn = sampleThrottle();
+    dirIn = sampleDir();
+    ch3In = sampleCh3();
+    throtOut = computeAndOutputThrottle();
+    dirOut = computeAndOutputDir();
+    ch3Out = computeAndOutputCh3();
 
-  if (!commandDrivers(throtIn, dirIn, ch3In))
-    Serial.println("=== Failed to command drivers! ===");
-
+    if (!commandDrivers(throtIn, dirIn, ch3In))
+      Serial.println("=== Failed to command drivers! ===");
+  }
   if (++u == OUTPUT_PERIOD)
     displayInfo(throtIn, dirIn, ch3In, throtOut, dirOut, ch3Out);
   /*Wire.beginTransmission(ADDR);
