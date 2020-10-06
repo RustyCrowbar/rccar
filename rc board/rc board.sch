@@ -2139,17 +2139,6 @@ Batt_0_sense
 Wire Wire Line
 	3250 5600 3550 5600
 $Comp
-L Device:CP1_Small C31
-U 1 1 5F3F659C
-P 1700 7500
-F 0 "C31" H 1791 7546 50  0000 L CNN
-F 1 "470uF" H 1791 7455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7500 50  0001 C CNN
-F 3 "~" H 1700 7500 50  0001 C CNN
-	1    1700 7500
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:CP1_Small C32
 U 1 1 5F3C2B37
 P 3400 6700
@@ -2181,61 +2170,6 @@ F 2 "" H 3400 6600 50  0001 C CNN
 F 3 "" H 3400 6600 50  0001 C CNN
 	1    3400 6600
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C30
-U 1 1 5F48A357
-P 1700 7400
-F 0 "C30" V 1472 7400 50  0000 C CNN
-F 1 "470uF" V 1563 7400 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7400 50  0001 C CNN
-F 3 "~" H 1700 7400 50  0001 C CNN
-	1    1700 7400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1_Small C29
-U 1 1 5F48ABA5
-P 1700 7300
-F 0 "C29" H 1791 7346 50  0000 L CNN
-F 1 "470uF" H 1791 7255 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7300 50  0001 C CNN
-F 3 "~" H 1700 7300 50  0001 C CNN
-	1    1700 7300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1_Small C28
-U 1 1 5F4ADE7E
-P 1700 7200
-F 0 "C28" H 1791 7246 50  0000 L CNN
-F 1 "470uF" H 1791 7155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7200 50  0001 C CNN
-F 3 "~" H 1700 7200 50  0001 C CNN
-	1    1700 7200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1_Small C27
-U 1 1 5F4AE4AD
-P 1700 7100
-F 0 "C27" H 1791 7146 50  0000 L CNN
-F 1 "470uF" H 1791 7055 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7100 50  0001 C CNN
-F 3 "~" H 1700 7100 50  0001 C CNN
-	1    1700 7100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP1_Small C26
-U 1 1 5F4AEC33
-P 1700 7000
-F 0 "C26" V 1472 7000 50  0000 C CNN
-F 1 "470uF" V 1563 7000 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7000 50  0001 C CNN
-F 3 "~" H 1700 7000 50  0001 C CNN
-	1    1700 7000
-	0    1    1    0   
 $EndComp
 Connection ~ 1600 7400
 Connection ~ 1600 7300
@@ -2269,8 +2203,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 7100 1800 7050
 Wire Wire Line
-	1800 7050 1600 7050
-Wire Wire Line
 	1600 7050 1600 7000
 Wire Wire Line
 	1800 7000 1800 6950
@@ -2292,17 +2224,191 @@ Wire Wire Line
 Connection ~ 1800 7500
 Wire Wire Line
 	1950 7400 1800 7400
-Connection ~ 1800 7400
 Wire Wire Line
 	1800 7300 2300 7300
-Connection ~ 1800 7300
 Wire Wire Line
 	1800 7200 2350 7200
-Connection ~ 1800 7200
 Wire Wire Line
 	1800 7100 2400 7100
-Connection ~ 1800 7100
 Wire Wire Line
 	1950 7000 1800 7000
+Text GLabel 2500 4900 2    50   Output ~ 0
+Batt_4
+Text GLabel 2500 5200 2    50   Output ~ 0
+Batt_3
+Text GLabel 2500 6100 2    50   Output ~ 0
+Batt_0
+Text GLabel 2500 5800 2    50   Output ~ 0
+Batt_1
+Text GLabel 2500 5500 2    50   Output ~ 0
+Batt_2
+Text GLabel 2500 4600 2    50   Output ~ 0
+Batt_5
+$Comp
+L Device:R R31
+U 1 1 5FA9159E
+P 2350 4750
+F 0 "R31" V 2143 4750 50  0000 C CNN
+F 1 "10k" V 2234 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 4750 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/71-CRCW060310K0JNEBC" H 2350 4750 50  0001 C CNN
+	1    2350 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 5FA9296A
+P 2350 5050
+F 0 "R32" V 2143 5050 50  0000 C CNN
+F 1 "10k" V 2234 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 5050 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/71-CRCW060310K0JNEBC" H 2350 5050 50  0001 C CNN
+	1    2350 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5FA92C52
+P 2350 5350
+F 0 "R33" V 2143 5350 50  0000 C CNN
+F 1 "10k" V 2234 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 5350 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/71-CRCW060310K0JNEBC" H 2350 5350 50  0001 C CNN
+	1    2350 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R34
+U 1 1 5FA92EF7
+P 2350 5650
+F 0 "R34" V 2143 5650 50  0000 C CNN
+F 1 "10k" V 2234 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 5650 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/71-CRCW060310K0JNEBC" H 2350 5650 50  0001 C CNN
+	1    2350 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 5FAA8A07
+P 2350 5950
+F 0 "R35" V 2143 5950 50  0000 C CNN
+F 1 "10k" V 2234 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 5950 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/71-CRCW060310K0JNEBC" H 2350 5950 50  0001 C CNN
+	1    2350 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 4600 2350 4600
+Wire Wire Line
+	2500 4900 2350 4900
+Connection ~ 2350 4900
+Wire Wire Line
+	2500 5200 2350 5200
+Connection ~ 2350 5200
+Wire Wire Line
+	2500 5500 2350 5500
+Connection ~ 2350 5500
+Wire Wire Line
+	2500 5800 2350 5800
+Connection ~ 2350 5800
+Wire Wire Line
+	2500 6100 2350 6100
+Wire Wire Line
+	1800 7050 1600 7050
+$Comp
+L Device:CP1_Small C31
+U 1 1 5F3F659C
+P 1700 7500
+F 0 "C31" H 1791 7546 50  0000 L CNN
+F 1 "470uF" H 1791 7455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7500 50  0001 C CNN
+F 3 "~" H 1700 7500 50  0001 C CNN
+	1    1700 7500
+	0    1    1    0   
+$EndComp
+Connection ~ 1800 7400
+$Comp
+L Device:CP1_Small C30
+U 1 1 5F48A357
+P 1700 7400
+F 0 "C30" V 1472 7400 50  0000 C CNN
+F 1 "470uF" V 1563 7400 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7400 50  0001 C CNN
+F 3 "~" H 1700 7400 50  0001 C CNN
+	1    1700 7400
+	0    1    1    0   
+$EndComp
+Connection ~ 1800 7300
+$Comp
+L Device:CP1_Small C29
+U 1 1 5F48ABA5
+P 1700 7300
+F 0 "C29" H 1791 7346 50  0000 L CNN
+F 1 "470uF" H 1791 7255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7300 50  0001 C CNN
+F 3 "~" H 1700 7300 50  0001 C CNN
+	1    1700 7300
+	0    1    1    0   
+$EndComp
+Connection ~ 1800 7200
+$Comp
+L Device:CP1_Small C28
+U 1 1 5F4ADE7E
+P 1700 7200
+F 0 "C28" H 1791 7246 50  0000 L CNN
+F 1 "470uF" H 1791 7155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7200 50  0001 C CNN
+F 3 "~" H 1700 7200 50  0001 C CNN
+	1    1700 7200
+	0    1    1    0   
+$EndComp
+Connection ~ 1800 7100
+$Comp
+L Device:CP1_Small C27
+U 1 1 5F4AE4AD
+P 1700 7100
+F 0 "C27" H 1791 7146 50  0000 L CNN
+F 1 "470uF" H 1791 7055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7100 50  0001 C CNN
+F 3 "~" H 1700 7100 50  0001 C CNN
+	1    1700 7100
+	0    1    1    0   
+$EndComp
 Connection ~ 1800 7000
+$Comp
+L Device:CP1_Small C26
+U 1 1 5F4AEC33
+P 1700 7000
+F 0 "C26" V 1472 7000 50  0000 C CNN
+F 1 "470uF" V 1563 7000 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1700 7000 50  0001 C CNN
+F 3 "~" H 1700 7000 50  0001 C CNN
+	1    1700 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FD2F281
+P 2350 6250
+F 0 "R?" V 2143 6250 50  0000 C CNN
+F 1 "10k" V 2234 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 6250 50  0001 C CNN
+F 3 "https://www.mouser.fr/ProductDetail/71-CRCW060310K0JNEBC" H 2350 6250 50  0001 C CNN
+	1    2350 6250
+	-1   0    0    1   
+$EndComp
+Connection ~ 2350 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5FD2F5EB
+P 2350 6400
+F 0 "#PWR?" H 2350 6150 50  0001 C CNN
+F 1 "GND" H 2355 6227 50  0000 C CNN
+F 2 "" H 2350 6400 50  0001 C CNN
+F 3 "" H 2350 6400 50  0001 C CNN
+	1    2350 6400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
