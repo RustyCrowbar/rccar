@@ -25,7 +25,7 @@ void readAndPrintBatteryVoltages() //Returns true if battery voltage is ok.
     prevVoltage = tmp;
     if (cellVoltage < (MIN_CELL_VOLTAGE / 2) || u == MAX_BATTERY_CELLS - 1)
       break; //We reached the last cell, skip to the end
-    battOk = (cellVoltage >= MIN_CELL_VOLTAGE && cellVoltage <= MAX_CELL_VOLTAGE);
+    battOk = (battOk && cellVoltage >= MIN_CELL_VOLTAGE && cellVoltage <= MAX_CELL_VOLTAGE);
     Serial.print(cellVoltage);
     Serial.print(" | ");
   }
