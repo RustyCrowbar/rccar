@@ -21,12 +21,12 @@ void readAndPrintBatteryVoltages() //Returns true if battery voltage is ok.
     
     // Isolate current cell voltage.
     cellVoltage -= prevVoltage;
+    Serial.print(cellVoltage);
     battVoltage += cellVoltage;
     prevVoltage = tmp;
+    battOk = (battOk && cellVoltage >= MIN_CELL_VOLTAGE && cellVoltage <= MAX_CELL_VOLTAGE);
     if (cellVoltage < (MIN_CELL_VOLTAGE / 2) || u == MAX_BATTERY_CELLS - 1)
       break; //We reached the last cell, skip to the end
-    battOk = (battOk && cellVoltage >= MIN_CELL_VOLTAGE && cellVoltage <= MAX_CELL_VOLTAGE);
-    Serial.print(cellVoltage);
     Serial.print(" | ");
   }
   Serial.print(" | Total: ");
@@ -160,7 +160,7 @@ void loop()
     dirOut = computeAndOutputDir();
     ch3Out = computeAndOutputCh3();
 
-    if (!commandDrivers(throtIn, dirIn, ch3In))
+    if (!commandDrivers(throtIn, dirIn, ch3In) && (++u == OUTPUT_PERIOD))
       Serial.println("=== Failed to command drivers! ===");
   }
   if (++u == OUTPUT_PERIOD)

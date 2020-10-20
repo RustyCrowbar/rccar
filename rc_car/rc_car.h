@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdint.h>
-#include <SoftwareSerial.h>
+//#include <SoftwareSerial.h>
 
 //DRV10987
 #include <Wire.h> //I2C Arduino Library
@@ -37,12 +37,12 @@ double cell_const[MAX_BATTERY_CELLS] =
   6.6000
 };
 
-#define THROTTLE_IN
-#define THROTTLE_OUT
-#define STEERING_IN
-#define STEERING_OUT
-#define CH3_IN
-#define CH3_OUT
+#define THROTTLE_IN 13
+#define THROTTLE_OUT 3
+#define STEERING_IN 10
+#define STEERING_OUT 5
+#define CH3_IN 12
+#define CH3_OUT 9
 
 #define FD_RATIO 255
 #define RD_RATIO 255
